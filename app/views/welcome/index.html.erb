@@ -1,0 +1,28 @@
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+
+				<center><%= image_tag("ImpGuru Logo.png", height: '404', width: '404') %>
+
+				<p>We're starting to develop a community and marketplace specifically for Open Source Internet of Things (IoT) Hardware and Software based on the Electric Imp!  <br /> <br /><br />If interested in receiving notifications when more information is available, please sign up below!</p>
+				
+
+<%= form_for @lead, html: {class: "margin-base-vertical"} do |f| %>
+  <p>
+  	<p class="input-group">
+  		<span class="input-group-addon"><span class="icon-envelope"></span></span>
+	    <%= f.text_field :email , class: "form-control input-lg" %>
+    </p>
+  </p>
+  <p class="help-block text-center"><small>We won't send you spam. Unsubscribe at any time.</small></p>
+  <p>
+    <%= f.submit "Send Me Updates" , class: "btn btn-success btn-lg" %>
+  </p>
+<% end %>
+
+			</center>
+
+			</div>
+		</div>
+	</div>
